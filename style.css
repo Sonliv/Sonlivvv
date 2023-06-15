@@ -61,6 +61,7 @@ a{
 	width: 40%;
 	display: flex;
 	justify-content: space-between;
+	font-size: 19px;
 }
 .phone-item::before {
 	content: url('img/phone_header.svg');
@@ -96,7 +97,7 @@ background-color: #fafafa;
 	justify-content: space-between;
 }
 .main_text {
-	margin: 50px 0 0 0;
+	margin: 70px 0 0 0;
 	font-size: 26px;
 }
 .main-title {
@@ -293,66 +294,6 @@ h3{
  }
 
 
-/* hover 
-
- .header-bot-wrapper a {
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
-	color: black;
-	margin-bottom: 5px;
- }
- 
- .header-bot-wrapper  a::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: -5px;
-	left: 0;
-	background-color: #00aaff;;
-	transform: scaleX(0);
-	transition: transform 0.6s ease-in-out;
- }
- 
- 
- .header-bot-wrapper  a:hover::after {
-	transform: scaleX(1);
-	background: #00aaff;
- }
-
- 
-
-
-
-
- .header-bot-wrapper a {
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
-	color: black;
-	margin-bottom: 5px;
- }
- 
- .header-bot-wrapper  a::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: -5px;
-	left: 0;
-	background-color: #00aaff;;
-	transform: scaleX(0);
-	transition: transform 0.6s ease-in-out;
- }
- 
- 
- .header-bot-wrapper  a:hover::after {
-	transform: scaleX(1);
-	background: #00aaff;
- }
-
-*/
 
  .hover-animation  {
 	position: relative;
@@ -369,7 +310,7 @@ h3{
 	height: 2px;
 	bottom: -5px;
 	left: 0;
-	background-color: #00aaff;;
+	background-color: #00aaff;
 	transform: scaleX(0);
 	transition: transform 0.6s ease-in-out;
  }
@@ -382,3 +323,358 @@ h3{
 
  
 
+/*  Душевые кабины     */
+
+.market {
+	margin: 60px 0 0 0;
+}
+.market-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.market-left {
+	width: 20%;
+}
+.title-market {
+	margin: 0 0 20px 0;
+	font-size: 28px;
+}
+.market-list {
+	font-size: 18px;
+}
+.market-list__item {
+	margin: 20px 0 0 0;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 0 10px 0;
+}
+.market-right {
+	border-left: 1px solid #E5E5E5;
+	padding: 0 0 0 40px;
+	width: 72%;
+}
+.cards-market__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card-market-item {
+	width: 48%;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 20px;
+	transition: 0.2s;
+	padding: 15px 0 20px 0;
+	box-shadow: 0px 0px 19px -2px rgba(114, 141, 231, 0.2);
+	margin: 0 0 40px 0;
+
+	font-size: 18px;
+	font-weight: 400;
+}
+.card-title-market {
+}
+.market-right h2{
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.card-market-item:hover{
+	transform: scale(1.05);
+}
+
+.card-market-item img{
+	margin-bottom: 20px;
+	width: 50%;
+	object-fit: cover;
+	height: 400px;
+}
+
+.market-right h2{
+	font-weight: 400;
+	color: #00aaff;
+	font-size: 28px;
+}
+
+
+.active a{
+	color: #00aaff;
+}
+
+.ograzhdenie img{
+	width: 70%;
+	object-fit: fill;
+}
+.ograzhdenie-modal img{
+	width: 60%;
+	object-fit: fill;
+}
+
+.komplektuyushchie img{
+	width: 90%;
+}
+
+
+.kontacty {
+	margin: 60px 0 0 0;
+}
+.kontacty-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.kontacty-left {
+}
+.kontacty-item {
+	margin: 0 0 14px 0;
+}
+.kontacty-map {
+}
+.kontacty-title{
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.bold-style{
+	font-weight: 500;
+	font-size: 20px;
+}
+
+
+
+
+
+/* Стили для модального окна и затемнения заднего фона */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 1100px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	padding: 15px;
+	box-shadow: 0px 0px 19px -2px rgba(114, 141, 231, 0.2);
+	font-size: 18px;
+}
+
+.modal-content {
+	margin: 30px 0 0 0;
+	text-align: center;
+	position: relative;
+}	
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9998;
+}
+
+.modal-wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+.modal-item{
+	text-align: left;
+	margin: 0 0 10px 0;
+}
+
+.modal-description{
+}
+
+.table-container {
+	width: 100%;
+	margin: 30px 0 0 0;
+ }
+ 
+ table {
+	width: 100%;
+	border-collapse: collapse;
+ }
+ 
+ td {
+	border: 1px solid #E5E5E5;
+	padding: 5px;
+ }
+ .table-container p{
+	text-align: left;
+	margin: 0 0 10px 0;
+ }
+
+.table-container table{
+	margin: 0 0 30px 0;
+}
+.btn-modal{
+	width: 65%;
+	transition: transform 0.3s ease-in-out;
+}
+.btn-modal:hover{
+	transform: scale(1.1);
+}
+.modal-description span{
+	font-weight: bold;
+}
+.right-modal p {
+	text-align: left;
+	margin: 0 0 24px 0;
+}
+
+/* Крестик */ 
+ #modal-close {
+	position: absolute;
+	top: -30px; /* Позиционирование от верхней границы контейнера */
+	right: 10px; /* Позиционирование от правой границы контейнера */
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+ }
+ 
+ #modal-close::before,
+ #modal-close::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 2px;
+	background-color: black;
+ }
+ 
+ #modal-close::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+ }
+ 
+ #modal-close::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+ }
+ 
+ /* Форма */
+	.contact{
+		margin: 0 auto;
+		padding: 0 0 0 100px;
+	}
+
+ .title-contact{	
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 57px;
+	text-align: center;
+	margin: 0px 0 70px 0;
+	color: #00aaff;
+	padding: 0 120px 0 0;
+	}
+	.wrapper-contact{
+		display: flex; 
+		justify-content: space-evenly;
+		margin: 0 0 100px 0;
+		max-height: 500px;
+	}
+	.form{
+		display: flex;
+		flex-direction: column;
+		border-right: 1px solid black;
+		padding: 0 100px 0 0;
+	}
+	.form img{
+		padding: 0 0 0 -320px;
+	}
+	.form p{
+	}
+	input{
+		padding: 30px 0 20px 0;
+		outline: none;
+		border: none;
+		border-bottom: 1px solid black;
+		width: 300px;
+		margin: 0 0 60px 0;
+	
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		color: #7C6E6E;
+	}
+	input::placeholder {
+		opacity: 0.5;
+		font-size: 25px;
+	 }
+	
+	 .social-contact {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 26px;
+	}
+	.social-contact p{
+		padding: 0 0 0 25px;
+	}
+	.number-contact {
+		margin: 0 0 36px -95px;
+	}
+	.mail-contact {
+		margin: 0 0 36px -95px;
+	}
+	.description-contact {
+		max-width: 456px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 29px;
+		letter-spacing: 0.05em;
+		margin: 0 0 0 -70px;
+	}
+	
+	.button {
+		border: none;
+		background: none;
+		padding: 0;
+		cursor: pointer;
+
+		width: 1px;
+		transform: scale(2); 
+		padding: 0 0 0 0px;
+		margin: 20px 0 0 0;
+		transition: transform 0.3s ease-in-out;
+	 }
+	 .button:hover{
+		transform: scale(1.9);
+	 }
+	.logo-whatsapp_{
+		width: 50px;
+	}
+
+
+
+
+
+	.about {
+	}
+	.container {
+	}
+	.title-contact {
+	}
+	.about-wrapper {
+	}
+	.list-about {
+	}
+	.about-item {
+		font-size: 26px;
+		color: #00aaff;
+		margin: 0 0 8px 0;
+	}
+	.about-item span{
+		font-size: 18px;
+		color: black;
+		display: block;
+		margin: 0 0 40px 0;
+	}
+	
+	.about-title{
+		margin-bottom: 40px;
+	}

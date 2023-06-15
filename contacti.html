@@ -12,14 +12,14 @@
 	<title>Каскад - Душевые</title>
 </head>
 <body>
-	<section id="header" class="header">
+	<section  class="header">
 		<div class="container">
 			<div class="header-flex">
-				<a href="#header" class="hover-animation" ><img src="img/logo.svg" alt="" class="logo"></a>
+				<a href="index.html" class="hover-animation" ><img src="img/logo.svg" alt="" class="logo"></a>
 				<div class="phone-header">
-					<a href="kontakty.html" class="phone-item hover-animation">8 900 235 95 90</a>
-					<a href="kontakty.html" class="phone-item hover-animation">8 928 237 70 97</a>
-					<a href="kontakty.html" class="phone-item hover-animation">8 928 237 70 17</a>
+					<a href="#kontakty" class="phone-item hover-animation">8 900 235 95 90</a>
+					<a href="#kontakty" class="phone-item hover-animation">8 928 237 70 97</a>
+					<a href="#kontakty" class="phone-item hover-animation">8 928 237 70 17</a>
 				</div>
 			</div>
 		</div>
@@ -49,31 +49,26 @@
 			</div>
 		</div>
 	</section>
-	<section class="cards">
+	<section id="contact_" class="contact">
 		<div class="container">
-			<h3>Душевые кабины — Каскад</h3>
-			<div class="cards-wrapper">
-				<a href="duzhevye-kabiny.html" class="card">
-					<img src="img/uslugi_main_1.svg" alt="">
-					<div class="card-title">Душевые кабины</div>
-				</a>
-				<a href="uglovye-kabiny.html" class="card">
-					<img src="img/uslugi_main_2.svg" alt="">
-					<div class="card-title">Угловые кабины</div>
-				</a>
-				<a href="duzhevye-ograzhdeniya.html" class="card">
-					<img src="img/uslugi_main_3.svg" alt="">
-					<div class="card-title">Душевые ограждения</div>
-				</a>
-				<a href="ograzhdenie-na-vannu.html" class="card">
-					<img src="img/uslugi_main_4.png" alt="">
-					<div class="card-title">Ограждение на ванну</div>
-				</a>
-				<a  href="komplektuyushchie.html" class="card padding-card">
-					<img src="img/uslugi_main_5.svg" alt="">
-					<div class="card-title">Комплектующие</div>
-				</a>
-				<div class="spacer" >
+			<div class="title-contact">Свяжитесь с нами</div>
+			<div class="wrapper-contact">
+				<form id="form_contacti" method="post" action="obr.php" class="form">
+					<input type="text" name="name" id="" placeholder="Имя">
+					<input type="email" name="email" id="" placeholder="Почта">
+					<input type="tel" name="phone" id="" placeholder="Телефон">
+					<button class="animaet-yvelichenie button" type="submit">
+						<img src="img/form-btn.svg" alt="">
+					</button>
+				</form>
+				<div class="social-contact">
+					<div class="number-contact">
+						 <p>8 900 235 95 90</p>
+					</div>
+					<div class="mail-contact">
+						<p>kaskad@gmail.com</p>
+					</div>
+					<div class="description-contact">Если у вас возникли вопросы или вам требуется уточнить детали заказа, наши  сотрудники по телефону всегда готовы ответить на все ваши вопросы и помочь в выборе. Мы также регулярно проверяем электронную почту, чтобы ни одно важное сообщение от наших клиентов не осталось без внимания.</div>
 				</div>
 			</div>
 		</div>
@@ -100,7 +95,7 @@
 			 </a></li>
 		</ul>
 		<ul class="menu">
-		  <li class="menu__item"><a class="menu__link" href="#header">Главная</a></li>
+		  <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
 		  <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
 		  <li class="menu__item"><a class="menu__link" href="duzhevye-kabiny.html">Каталог</a></li>
 		  <li class="menu__item"><a class="menu__link" href="kontakty.html">Контакты</a></li>
